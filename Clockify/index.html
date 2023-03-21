@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockify</title>
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/toggle.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="topbar__toggler" menu-icon-btn>
+            <a class="topbar__toggler__btn">&#9776;</a>
+        </div>
+        <div class="topbar__logo">
+            <img src="./assets/clockify.svg" alt="clockify logo">
+        </div>
+        <div class="topbar__midspace">
+
+        </div>
+        <div class="workspace">
+            <div class="workspace__dropdown">
+                <span class="dropdownbtn" id="workspace_password">Mouli Bhaskaran's Workspace </span>
+
+            </div>
+        </div>
+        <div class="topbar__upgrade">
+            <button class="topbar__upgrade__btn">UPGRADE</button>
+        </div>
+        <div class="topbar__help">
+            <img src="./assets/help.svg" alt="help icon">
+        </div>
+        <div class="topbar__notification">
+            <img src="./assets/notification.svg" alt="notification icon">
+        </div>
+        <div class="topbar__avatar">MB</div>
+    </div>
+    <div class="clockify__container">
+        <aside class="clockify__container__sidebar open" data-sidebar>
+            <ul class="sidebar__list">
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="./assets/time-tracker.svg" alt="">
+                        <div class="hidden-sidebar">TIME TRACKER</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="./assets/calendar.svg" alt="">
+                        <div class="hidden-sidebar">CALENDAR</div>
+                    </a>
+                </li>
+                <li class="sidebar__heading">
+                    <p>ANALYZE</p>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="https://clockify.me/assets/nav-icons/dashboard.svg" alt="">
+                        <div class="hidden-sidebar">DASHBOARD</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="./assets/reports.svg" alt="">
+                        <div class="hidden-sidebar">REPORTS</div>
+                    </a>
+                </li>
+                <li class="sidebar__heading">
+                    <p>MANAGE</p>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="./assets/projects.svg" alt="">
+                        <div class="hidden-sidebar">PROJECTS</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="https://clockify.me/assets/nav-icons/teams.svg" alt="">
+                        <div class="hidden-sidebar">TEAM</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="https://clockify.me/assets/nav-icons/clients.svg" alt="">
+                        <div class="hidden-sidebar">CLIENTS</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="https://clockify.me/assets/nav-icons/tags.svg" alt="">
+                        <div class="hidden-sidebar">TAGS</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="https://clockify.me/assets/nav-icons/settings.svg" alt="">
+                        <div class="hidden-sidebar">SETTINGS</div>
+                    </a>
+                </li>
+                <li class="sidebar__list__item ">
+                    <a href="#" class="sidebar__link">
+                        <img class="sidebar__icon" src="./assets/chevron-down.svg" alt="">
+                        <div class="hidden-sidebar">SHOW MORE</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div id="root">
+            <div class="time__tracker">
+                <div class="timeTracker__main">
+                    <input type="text" placeholder="What are you working on?" id="entryActions__description"
+                        class="entryDetails__description" />
+                    <div class="entryDetails__project">
+                        <img src="./assets/plus-blue.svg" alt="Select Project" class="entryDetails__plusIcon" />
+                        <button id="entryActions__projectSelectButton" class="entryDetails__projectSelectButton">
+                            Project
+                        </button>
+                        <img src="https://app.clockify.me/assets/ui-icons/tag-gray.svg" alt="Select Project"
+                            class="entryDetails__pricetag" />
+
+                    </div>
+                </div>
+
+                <div class="timeTracker__ctl">
+                    <p class="entryDetails__timeValue" id="entryActions__currentTime">
+                        00:00:00
+                    </p>
+                    <button class="entryDetails__ctlbtn" id="entryActions__timectl">
+                        Start
+                    </button>
+                    <img src="./assets/close.png" alt="Discard timer" class="entryDetails__timediscard"
+                        id="entryActions__timediscard" />
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
